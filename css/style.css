@@ -15,10 +15,16 @@ header {
     height: 730px;
 }
 
-.container-big{
+.container-big {
     width: 1300px;
     margin: 0 auto;
     padding-top: 80px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
 .row::after {
@@ -39,13 +45,18 @@ ul {
     list-style: none;
 }
 
-a {
+nav a {
     color: #333;
     text-decoration: none;
 }
 
 a:hover {
     font-weight: 700;
+}
+
+main a {
+    color: #0063FF;
+    text-decoration: none;
 }
 
 button {
@@ -60,12 +71,40 @@ button {
     font-size: 18px;
 }
 
-p {
+.margin-30 {
     margin: 30px 0;
 }
 
 .p-small{
     font-size: 15px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.user::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f007";
+}
+
+.folder::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f007";
+}
+
+.pencil::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f007";
 }
 
 /* ----------------------------- */
@@ -89,6 +128,7 @@ p {
 .logo img {
     vertical-align: middle;
     width: 100%;
+    padding-bottom: 6px;
 }
 
 .menu-left li {
@@ -104,7 +144,8 @@ p {
 /* contenuto header */
 
 .container-big h1 {
-    font-size: 75px;
+    font-size: 73px;
+    font-weight: 900;
 }
 
 .jumbo-text {
@@ -129,4 +170,109 @@ p {
 .jumbo-text .fas {
     margin-top: 20px;
     font-size: 40px;
+}
+
+ /* prima sezione-piani e prezzi */
+
+ .check {
+     margin-top: 80px;
+ }
+
+ input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 5px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 5px #0063FF solid;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+ 
+.check label {
+    margin: 0 20px 0 10px;
+}
+
+.plans {
+    border: 1px #ccc solid;
+    padding: 30px;
+}
+
+.professional-col {
+    width: 32.5%;
+}
+
+.standard-col {
+    width: calc(35% - 30px);
+    margin: 0 15px;
+    height: 500px;
+}
+
+.advanced-col {
+    width: 32.5%;
+    height: 500px;
+}
+
+.plan-category{
+    padding: 30px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+}
+
+.single-plan p::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f007";
+}
+
+.team-plan p::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f1ad";
+}
+
+.plan-prices {
+    font-weight: 900;
+    line-height: 60px;
+}
+.plan-tags {
+    color: rgb(148, 148, 148);
+}
+
+.plans button {
+    width: 100%;
+}
+
+.features {
+    margin-top: 60px;
+}
+.features p {
+    font-weight: 900;
+}
+
+.features li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: #0063FF;
 }
