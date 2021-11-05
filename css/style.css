@@ -24,7 +24,7 @@ header {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 180px;
 }
 
 .row::after {
@@ -71,6 +71,13 @@ button {
     font-size: 18px;
 }
 
+.white-button {
+    background-color: #fff;
+    border: 1px rgb(80, 80, 80) solid;
+    color: #000;
+    
+}
+
 .margin-30 {
     margin: 30px 0;
 }
@@ -89,6 +96,17 @@ h3 {
     font-weight: 900;
 }
 
+.strong {
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.user-plus::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f234";
+}
+
 .user::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
@@ -98,13 +116,19 @@ h3 {
 .folder::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    content: "\f007";
+    content: "\f07b";
 }
 
 .pencil::before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    content: "\f007";
+    font-weight: 900;
+    content: "\f303";
+}
+
+li::before {
+    position: absolute;
+    left: 0px;
+    top: 2px;
 }
 
 /* ----------------------------- */
@@ -212,21 +236,27 @@ input[type='radio']:checked:after {
 
 .plans {
     border: 1px #ccc solid;
+    height: 1100px;
     padding: 30px;
 }
 
+.plans li {
+    position:relative;
+    padding-left: 25px;
+}
+
 .professional-col {
-    width: 32.5%;
+    width: calc((100%/3) - 32px);
 }
 
 .standard-col {
-    width: calc(35% - 30px);
-    margin: 0 15px;
+    width: calc((100%/3) - 32px);
+    margin: 0 48px;
     height: 500px;
 }
 
 .advanced-col {
-    width: 32.5%;
+    width: calc((100%/3) - 32px);
     height: 500px;
 }
 
@@ -251,10 +281,6 @@ input[type='radio']:checked:after {
     content: "\f1ad";
 }
 
-.plan-prices {
-    font-weight: 900;
-    line-height: 60px;
-}
 .plan-tags {
     color: rgb(148, 148, 148);
 }
@@ -275,4 +301,51 @@ input[type='radio']:checked:after {
     font-weight: 900;
     content: "\f00c";
     color: #0063FF;
+}
+
+/* enterprise */
+
+.team-title {
+    margin-top: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+}
+
+.enterprise {
+    border: 1px #ccc solid;
+    padding: 30px;
+}
+
+.col-left {
+    width: 70%;
+}
+
+.col-right {
+    width: 30%;
+    
+}
+
+.enterprise button {
+    width: 100%;
+}
+
+/* sezione immagine+testo */
+
+.col-left-img {
+    width: 55%;
+}
+
+.col-left-img img {
+    width: 100%;
+}
+
+.col-right-text {
+    width: 40%;
+}
+
+.col-right-text p {
+    line-height: 35px;
 }
