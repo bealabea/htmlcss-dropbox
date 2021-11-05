@@ -6,6 +6,19 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header {
+    background-color: #ADD1EA;
+    height: 730px;
+}
+
+.container-big{
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 80px;
 }
 
 .row::after {
@@ -29,7 +42,6 @@ ul {
 a {
     color: #333;
     text-decoration: none;
-    font-weight: 500;
 }
 
 a:hover {
@@ -40,12 +52,23 @@ button {
     border: none;
     background-color: #0063FF;
     color: #fff;
-    height: 30px;
-    line-height: 30px;
+    height: 38px;
+    line-height: 38px;
     padding: 0 18px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
+    font-size: 18px;
 }
+
+p {
+    margin: 30px 0;
+}
+
+.p-small{
+    font-size: 15px;
+}
+
+/* ----------------------------- */
 
 /* topbar */
 
@@ -59,8 +82,13 @@ button {
     padding: 0 30px;
 }
 
+.logo {
+    width: 150px;
+}
+
 .logo img {
     vertical-align: middle;
+    width: 100%;
 }
 
 .menu-left li {
@@ -74,3 +102,31 @@ button {
 }
 
 /* contenuto header */
+
+.container-big h1 {
+    font-size: 75px;
+}
+
+.jumbo-text {
+    margin: 30px 40px 0 0;
+    width: calc(38% - 40px);
+}
+
+.jumbo-img {
+    margin-top: 60px;
+    width: 62%;
+}
+
+.jumbo-img img {
+    width: 100%;
+}
+
+.container-big p:last-of-type {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.jumbo-text .fas {
+    margin-top: 20px;
+    font-size: 40px;
+}
