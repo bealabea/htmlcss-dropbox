@@ -78,8 +78,12 @@ button {
     
 }
 
-.margin-30 {
+.m-1 {
     margin: 30px 0;
+}
+
+.m-2 {
+    margin-top: 80px;
 }
 
 .p-small{
@@ -131,6 +135,23 @@ li::before {
     top: 2px;
 }
 
+.left-col {
+    width: calc((100%/3) - 32px);
+}
+
+.center-col {
+    width: calc((100%/3) - 32px);
+    margin: 0 48px;
+}
+
+.right-col {
+    width: calc((100%/3) - 32px);
+}
+
+img {
+    width: 100%;
+}
+
 /* ----------------------------- */
 
 /* topbar */
@@ -151,7 +172,6 @@ li::before {
 
 .logo img {
     vertical-align: middle;
-    width: 100%;
     padding-bottom: 6px;
 }
 
@@ -182,10 +202,6 @@ li::before {
     width: 62%;
 }
 
-.jumbo-img img {
-    width: 100%;
-}
-
 .container-big p:last-of-type {
     font-size: 15px;
     margin: 15px 0;
@@ -197,10 +213,6 @@ li::before {
 }
 
  /* prima sezione-piani e prezzi */
-
- .check {
-     margin-top: 80px;
- }
 
  input[type='radio']:after {
     width: 15px;
@@ -245,23 +257,7 @@ input[type='radio']:checked:after {
     padding-left: 25px;
 }
 
-.professional-col {
-    width: calc((100%/3) - 32px);
-}
-
-.standard-col {
-    width: calc((100%/3) - 32px);
-    margin: 0 48px;
-    height: 500px;
-}
-
-.advanced-col {
-    width: calc((100%/3) - 32px);
-    height: 500px;
-}
-
 .plan-category{
-    padding: 30px;
     text-align: center;
     padding: 10px;
     border-top: 1px #ccc solid;
@@ -319,13 +315,8 @@ input[type='radio']:checked:after {
     padding: 30px;
 }
 
-.col-left {
-    width: 70%;
-}
-
-.col-right {
-    width: 30%;
-    
+.button-right-col {
+    width: 30%;  
 }
 
 .enterprise button {
@@ -338,10 +329,6 @@ input[type='radio']:checked:after {
     width: 55%;
 }
 
-.col-left-img img {
-    width: 100%;
-}
-
 .col-right-text {
     width: 40%;
 }
@@ -349,3 +336,5 @@ input[type='radio']:checked:after {
 .col-right-text p {
     line-height: 35px;
 }
+
+/* sezione operazioni con dropbox */
