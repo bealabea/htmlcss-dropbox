@@ -56,7 +56,6 @@ a:hover {
 
 main a {
     color: #0063FF;
-    text-decoration: none;
 }
 
 button {
@@ -69,13 +68,14 @@ button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .white-button {
     background-color: #fff;
     border: 1px rgb(80, 80, 80) solid;
     color: #000;
-    
+    cursor: pointer;    
 }
 
 .m-1 {
@@ -93,6 +93,7 @@ button {
 h2{
     font-size: 40px;
     font-weight: 900;
+    margin: 30px 0;
 }
 
 h3 {
@@ -338,3 +339,91 @@ input[type='radio']:checked:after {
 }
 
 /* sezione operazioni con dropbox */
+
+/* sezione business */
+
+.business-row {
+    height: 600px;
+}
+
+.business-left-col {
+    width: calc(30% - 32px);
+    height: 100%;
+}
+
+.business-center-col {
+    width: calc(40% - 32px);
+    margin: 0 48px;
+    height: 100%;
+}
+
+.business-right-col {
+    width: calc(30% - 32px);
+    height: 100%;
+}
+
+.box {
+    width: 50%;
+    height: 50%;
+}
+
+.green-box {
+    background-color: #94D595;
+    position: relative;
+}
+
+.green-box:hover {
+    border: 12px #CAEACB solid;
+}
+
+.cherry-box {
+    background-color: #6B002B;
+    position: relative;
+}
+
+.cherry-box:hover {
+    border: 12px #cc3c76 solid;
+}
+
+.light-blue-box {
+    background-color: #0096D3;
+    position: relative;
+}
+
+.light-blue-box:hover {
+    border: 12px #84c6e0 solid;
+}
+
+.red-box {
+    background-color: red;
+    position: relative;
+}
+
+.red-box:hover {
+    border: 12px rgb(240, 97, 97) solid;
+}
+
+.business-center-col {
+    position: relative;
+}
+
+.box svg {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+}
+
+.center-box {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-box svg {
+    width: 30%;
+}
