@@ -12,13 +12,12 @@ body {
 
 header {
     background-color: #ADD1EA;
-    height: 730px;
 }
 
 .container-big {
     width: 1300px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .container {
@@ -172,8 +171,7 @@ img {
 }
 
 .logo img {
-    vertical-align: middle;
-    padding-bottom: 6px;
+    vertical-align: text-bottom;
 }
 
 .menu-left li {
@@ -199,8 +197,13 @@ img {
 }
 
 .jumbo-img {
-    margin-top: 60px;
     width: 62%;
+    position: relative;
+}
+
+.jumbo-img img {
+    position: absolute;
+    top: 60px;
 }
 
 .container-big p:last-of-type {
@@ -426,4 +429,9 @@ input[type='radio']:checked:after {
 
 .center-box svg {
     width: 30%;
+}
+
+.bg-row {
+    background-color: lightblue;
+    padding-bottom: 180px;
 }
