@@ -100,6 +100,16 @@ h3 {
     font-weight: 900;
 }
 
+h4 {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.border-bottom {
+    padding-bottom: 50px;
+    border-bottom: 1px #ccc solid;
+}
+
 .strong {
     font-weight: 900;
     line-height: 60px;
@@ -150,6 +160,10 @@ li::before {
 
 img {
     width: 100%;
+}
+
+.fas {
+    font-size: 25px;
 }
 
 /* ----------------------------- */
@@ -370,30 +384,30 @@ input[type='radio']:checked:after {
     height: 50%;
 }
 
-.green-box {
+.designit-box {
     background-color: #94D595;
     position: relative;
 }
 
-.green-box:hover {
+.designit-box:hover {
     border: 12px #CAEACB solid;
 }
 
-.cherry-box {
+.asu-box {
     background-color: #6B002B;
     position: relative;
 }
 
-.cherry-box:hover {
+.asu-box:hover {
     border: 12px #cc3c76 solid;
 }
 
-.light-blue-box {
+.florida-box {
     background-color: #0096D3;
     position: relative;
 }
 
-.light-blue-box:hover {
+.florida-box:hover {
     border: 12px #84c6e0 solid;
 }
 
@@ -406,17 +420,44 @@ input[type='radio']:checked:after {
     border: 12px rgb(240, 97, 97) solid;
 }
 
+.hearst-box {
+    background-color: #ADD1EA;
+    position: relative;
+}
+
+.hearst-box:hover {
+    border: 12px #c1d4e2 solid;
+}
+
+.lonely-planet-box {
+    background-color: #022486;
+    position: relative;
+}
+
+.lonely-planet-box:hover {
+    border: 12px #4c62a3 solid;
+}
+
+.clear-channel-box {
+    background-color: #FFD600;
+    position: relative;
+}
+
+.clear-channel-box:hover {
+    border: 12px #e6d581 solid;
+}
+
 .business-center-col {
     position: relative;
 }
 
-.box svg {
+.box img {
     width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: #fff;
+    filter: invert(100%);
 }
 
 .center-box {
@@ -434,4 +475,29 @@ input[type='radio']:checked:after {
 .bg-row {
     background-color: lightblue;
     padding-bottom: 180px;
+}
+
+.business button {
+    width: 100%;
+    border: 0;
+}
+
+.business h2 {
+    margin: 0;
+    color: #6B002B;
+}
+
+.question-title {
+    margin-bottom: 80px;
+}
+
+.question {
+    border-top: 1px #ccc solid;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+}
+
+.row .question:last-child{
+    border-bottom: 1px #ccc solid;
 }
