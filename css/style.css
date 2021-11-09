@@ -7,7 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 header {
@@ -15,20 +15,15 @@ header {
 }
 
 .container-big {
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 110px 0;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding-top: 180px;
-}
-
-.footer-container {
-    width: 1500px;
-    margin: 0 auto;
 }
 
 .row::after {
@@ -75,11 +70,14 @@ button {
     cursor: pointer;
 }
 
-.white-button {
+button.white-button {
     background-color: #fff;
     border: 1px rgb(80, 80, 80) solid;
-    color: #000;
-    cursor: pointer;    
+    color: #000;     
+}
+
+.h-100 {
+    height: 100%;
 }
 
 .m-1 {
@@ -90,14 +88,14 @@ button {
     margin-top: 80px;
 }
 
-.p-small{
-    font-size: 15px;
+.p-18{
+    font-size: 18px;
 }
 
 h2{
     font-size: 40px;
     font-weight: 900;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -118,6 +116,7 @@ h4 {
 .strong {
     font-weight: 900;
     line-height: 60px;
+    font-size: 18px;
 }
 
 .user-plus::before {
@@ -150,17 +149,13 @@ li::before {
     top: 2px;
 }
 
-.left-col {
+.col {
     width: calc((100%/3) - 32px);
 }
 
 .center-col {
     width: calc((100%/3) - 32px);
     margin: 0 48px;
-}
-
-.right-col {
-    width: calc((100%/3) - 32px);
 }
 
 img {
@@ -241,7 +236,7 @@ img {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    top: -5px;
+    top: -6px;
     left: -1px;
     position: relative;
     background-color: #d1d3d1;
@@ -256,7 +251,7 @@ input[type='radio']:checked:after {
     height: 15px;
     border-radius: 15px;
     border: 5px #0063FF solid;
-    top: -5px;
+    top: -6px;
     left: -1px;
     position: relative;
     background-color: #d1d3d1;
@@ -267,6 +262,7 @@ input[type='radio']:checked:after {
  
 .check label {
     margin: 0 20px 0 10px;
+    font-size: 18px;
 }
 
 .plans {
@@ -281,6 +277,7 @@ input[type='radio']:checked:after {
 }
 
 .plan-category{
+    font-size: 18px;
     text-align: center;
     padding: 10px;
     border-top: 1px #ccc solid;
@@ -311,9 +308,6 @@ input[type='radio']:checked:after {
 .features {
     margin-top: 60px;
 }
-.features p {
-    font-weight: 900;
-}
 
 .features li::before {
     font-family: "Font Awesome 5 Free";
@@ -325,7 +319,6 @@ input[type='radio']:checked:after {
 /* enterprise */
 
 .team-title {
-    margin-top: 80px;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -364,34 +357,27 @@ input[type='radio']:checked:after {
 
 /* sezione business */
 
-.business-row {
+.business-col, .business-center {
     height: 600px;
 }
 
-.business-left-col {
+.business-col {
     width: calc(30% - 32px);
-    height: 100%;
 }
 
-.business-center-col {
+.business-center {
     width: calc(40% - 32px);
     margin: 0 48px;
-    height: 100%;
-}
-
-.business-right-col {
-    width: calc(30% - 32px);
-    height: 100%;
 }
 
 .box {
     width: 50%;
     height: 50%;
+    position: relative;
 }
 
 .designit-box {
     background-color: #94D595;
-    position: relative;
 }
 
 .designit-box:hover {
@@ -400,7 +386,6 @@ input[type='radio']:checked:after {
 
 .asu-box {
     background-color: #6B002B;
-    position: relative;
 }
 
 .asu-box:hover {
@@ -409,7 +394,6 @@ input[type='radio']:checked:after {
 
 .florida-box {
     background-color: #0096D3;
-    position: relative;
 }
 
 .florida-box:hover {
@@ -418,7 +402,6 @@ input[type='radio']:checked:after {
 
 .red-box {
     background-color: red;
-    position: relative;
 }
 
 .red-box:hover {
@@ -427,7 +410,6 @@ input[type='radio']:checked:after {
 
 .hearst-box {
     background-color: #ADD1EA;
-    position: relative;
 }
 
 .hearst-box:hover {
@@ -436,7 +418,6 @@ input[type='radio']:checked:after {
 
 .lonely-planet-box {
     background-color: #022486;
-    position: relative;
 }
 
 .lonely-planet-box:hover {
@@ -445,14 +426,13 @@ input[type='radio']:checked:after {
 
 .clear-channel-box {
     background-color: #FFD600;
-    position: relative;
 }
 
 .clear-channel-box:hover {
     border: 12px #e6d581 solid;
 }
 
-.business-center-col {
+.business-center {
     position: relative;
 }
 
@@ -513,7 +493,6 @@ input[type='radio']:checked:after {
 footer {
     background-color: #000;
     margin-top: 180px;
-    padding: 80px 0;
 }
 
 .footer-col {
